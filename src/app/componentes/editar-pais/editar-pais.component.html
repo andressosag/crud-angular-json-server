@@ -1,0 +1,35 @@
+<div class="container mt-5">
+
+  <div *ngIf="mensaje" class="alert alert-success" role="alert">
+    Pais <strong>{{nombreActualizado}}</strong> actualizado con éxito!
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+
+      <div class="card">
+        <div class="card-header">
+          Editar pais
+        </div>
+        <div class="card-body">
+          <form [formGroup] = "formPais" (ngSubmit)="editar()">
+            <div class="mb-3">
+              <label class="form-label">Pais</label>
+              <input type="text" class="form-control" placeholder="Ingrese el nombre del pais" formControlName="nombre">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Población</label>
+              <input type="text" class="form-control" placeholder="Ingrese la cantidad de población" formControlName="poblacion">
+            </div>
+            <button type="submit" class="btn btn-primary me-3">Actualizar</button>
+            <a class="btn btn-danger" routerLink="/listar">Regresar al listado</a>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

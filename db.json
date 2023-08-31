@@ -1,0 +1,29 @@
+{
+  "paises": [
+    {
+      "nombre": "Argentina",
+      "poblacion": 45000000,
+      "id": 1
+    },
+    {
+      "nombre": "Colombia",
+      "poblacion": "98870000",
+      "id": 2
+    },
+    {
+      "nombre": "Perú",
+      "poblacion": "699388888",
+      "id": 3
+    },
+    {
+      "nombre": "Brasil",
+      "poblacion": "8920000",
+      "id": 4
+    },
+    {
+      "nombre": "Ecuador",
+      "poblacion": "1002999",
+      "id": 5
+    }
+  ]
+}

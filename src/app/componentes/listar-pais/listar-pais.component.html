@@ -1,0 +1,45 @@
+<div class="container mt-5">
+
+  <div *ngIf="mensaje" class="alert alert-success" role="alert">
+    Pais <strong>{{nombreEliminado}}</strong> eliminado con éxito!
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+
+      <div class="card">
+        <div class="card-header">
+          Listado de paises
+        </div>
+        <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre del país</th>
+                <th scope="col">Población</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of dataPaises">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.nombre}}</td>
+                <td>{{item.poblacion}}</td>
+                <td>
+                  <i class="fa fa-trash text-danger"  style="cursor: pointer;" (click)="eliminar(item.id,item.nombre)"></i>
+                  | <a routerLink="/editar/{{item.id}}"><span class="fa fa-edit text-primary"></span></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+

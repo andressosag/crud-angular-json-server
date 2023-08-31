@@ -1,0 +1,8 @@
+- iniciar app
+ng serve
+http://localhost:4200/
+
+- iniciar json server
+ingresar a la carpeta del proyecto
+json-server --watch db.json --port 3001
+http://localhost:3001/
