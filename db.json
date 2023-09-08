@@ -1,11 +1,6 @@
 {
   "paises": [
     {
-      "nombre": "Argentina",
-      "poblacion": 45000000,
-      "id": 1
-    },
-    {
       "nombre": "Colombia",
       "poblacion": "98870000",
       "id": 2
@@ -24,6 +19,11 @@
       "nombre": "Ecuador",
       "poblacion": "1002999",
       "id": 5
+    },
+    {
+      "nombre": "Chile",
+      "poblacion": "100",
+      "id": 6
     }
   ]
 }
